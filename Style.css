@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
+body{
+    background-color: #F8F3ED;
+    margin: 0;
+    padding: 0;
+    transition: background 0.2s linear;
+}
+
+.dark{
+  background-color: #28251E;
+  color: #ffffff;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    /* background-color: red; */
+    grid-auto-flow: row;
+    
+}
+.logo
+{
+  width: 11vw;
+  position: relative;
+  left:34px;
+  border-radius: 100%;
+  transition: 0.5s linear;
+}
+
+
+.left2
+{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 69%;
+    top: 1%;
+    left: 65px;
+    gap: 30px;
+}
+.heroheading{
+    
+    font-family: 'Playfair Display', serif;
+    
+    color: #FF0009;
+    font-size: xxx-large;
+    
+    
+    line-height: 90%;
+    position: relative;
+    transition: color 0.2s linear;
+    
+
+    
+}
+.subheading{
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+.subheading2{
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 6vh;
+    letter-spacing: 1.3px;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.right{
+    background-image: url("WhatsApp_Image_2023-03-28_at_23_12_42-6k2u-tTX--transformed.jpeg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s linear
+    
+
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+}
+
+/* ------dark mode button----- */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+/* * ------dark mode button----- */ 
+
+* {box-sizing: border-box;}
+
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    padding:5px;
+    
+}
+.opacity{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+  }
+
+
+
+
+/* CSS */
+.button-17{
+  align-items: center;
+  appearance: none;
+  background-color: #BE7D3D;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+/* ---------about me page------- */
+
+.container2{
+  
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  height: 100vh;
+  grid-auto-flow: row;
+  
+
+}
+.left3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.left3 img{
+  border-radius: 10px;
+  object-fit: cover;
+  width: 30vw;
+}
+
+.right3 h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: xxx-large;
+ 
+  
+}
+
+.tabtitle{
+  display: flex;
+  
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+.tablinks{
+  flex-basis: 40%;
+  cursor: pointer;
+  position: relative;
+}
+
+.tablinks::after{
+  content: '';
+  width: 0;
+  
+}
+
+.tablinks.activelinks::after{
+  
+  
+  height: 3px;
+  background:#008FAE ;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  
+  width: 50%;
+}
+
+
+.tabcontents ul li{
+  margin: 10px;
+  margin-left: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+}
+.tabcontents ul{
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.tabcontents ul li span{
+  
+  color:#008FAE ;
+  font-weight: 600;
+  
+}
+.tabcontents{
+  display: none;
+}
+
+.activetabs{
+  
+  display:inline-flex ;
+  gap: 15px;
+  
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 40vh;
+  
+  
+}
+.icons img{
+  max-width: 100%; /* Images will not exceed the width of their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+  max-height: 200px
+}
+
+.icons2 img{
+  max-width: 100%; /* Images will not exceed the width of their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+  max-height: 180px
+}
+
+
+
+
