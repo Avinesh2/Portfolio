@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Rubik+Iso&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
 body{
     background-color: #F8F3ED;
@@ -364,14 +365,22 @@ ul{
   grid-template-columns: 1fr 1fr 1fr;
   height: 60vh;
   gap: 10px;
+ 
   
  
 
  
 }
+.prjlist p{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+ 
+}
 .prjlist h3{
   letter-spacing: 10px ;
   text-align: center;
+  font-family: 'Rubik Iso', cursive;
+  font-size: xx-large;
 
 }
 .prjlist i{
@@ -381,12 +390,22 @@ ul{
 }
 .prjitem{
   
-  background-color: #3185FC;
+  background-color: #FF970B;
   margin: 10px;
   border-radius: 15px;
   transition: background 0.5s,transform 0.5s;
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px; 
   color: #F8F3ED;
+  display: inline-flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  
+}
+.prjitem img{
+  height: 20%;
+  width: 20%;
+  
 }
 
 .prjitem:hover{
@@ -404,7 +423,7 @@ ul{
   text-align: center;
   padding: 25px 0;
   margin-top:20px ;
-  background: #192674e6;
+  background: #FF970B;
   color: white;
 }
 
